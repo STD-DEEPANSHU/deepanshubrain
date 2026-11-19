@@ -166,7 +166,8 @@ async def main():
                 f"Speed: {rate_per_min:.1f}/min ({rate_per_hour:.0f}/hr) | "
                 f"By: @{worker.username}\n"
                 f"   User: \"{raw_prompt}\"\n"
-                f"   🌸 {config.BOT_NAME}: \"{clean_reply}\" {reactions}\n"
+                f"   🌸 {config.BOT_NAME}: \"{clean_reply}\" {reactions}\n",
+                flush=True
             )
 
             # Global safety delay
